@@ -1,0 +1,72 @@
+.Form {
+  font-family:'Times New Roman', 'Times, serif';
+  margin: auto auto;
+  width: 95%;
+  max-width: 19rem;
+  border-radius: 6px;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:23rem;
+  flex-direction: column;
+  color: #C5DFF8;
+  margin-top: 50px;
+background-color:blue;
+}
+
+.Form div {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  padding-right: 15px;
+  border-radius: 5px;
+}
+
+.Form h3 {
+  font-size: 2rem;
+
+}
+
+.Form input {
+  padding: 5px;
+  margin: 4%;
+  font-size: 1.2rem;
+  width:260px;
+}
+
+.Form button {
+  display: inline-block;
+  border-radius: 2px;
+  border-radius: 1rem;
+}
+
+.Form a {
+  color: hsl(34deg 100% 50%);
+  text-decoration: none;
+  font-size: larger;
+  padding: 1rem;
+}
+
+.Form input:hover,
+input.hover {
+  border-color: hsl(34deg 100% 50%);
+}
+
+.form input:active,
+input.active {
+  border-color: hsl(34deg 100% 50%);
+}
+
+.Form button:hover,
+button.hover {
+  background-color: rgb(171, 102, 11);
+}
+
+.Form a:hover,
+a.hover {
+  color: rgb(171, 102, 11);
+}

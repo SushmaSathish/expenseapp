@@ -1,0 +1,41 @@
+.header {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 0 3%;
+    border-bottom:1px solid  hsl(34, 23%, 14%);
+    font-family: 'Times New Roman', Times, serif;
+    background-color:blue;
+    /* position: fixed; */
+    
+  }
+  
+  .header h1 {
+    color: rgb(15, 220, 223);
+  }
+  
+  .header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header a {
+    color:aqua;
+    text-decoration: none;
+    font-size: larger;
+    padding: 1rem;
+  }
+  
+  .header a:hover,
+  .header a:active,
+  .header a.active {
+    color:#b19bd5 ;
+  }
+  
+  .header button:hover,
+  button.hover {
+    background-color: rgb(171, 102, 11);
+  }
