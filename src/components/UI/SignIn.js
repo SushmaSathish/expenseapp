@@ -16,7 +16,7 @@ const SignIn = () => {
   const history = useHistory("");
   const dispatch = useDispatch();
 
-  // const loginCtx = useContext(LoginContext);
+
 
   const signInSubmitHandler = async (event) => {
     event.preventDefault();
@@ -25,7 +25,7 @@ const SignIn = () => {
     const pswdValue = pswdRef.current.value;
 
     const response = await fetch(
-      "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAe2c-LVG1tbj5NhaYcEXqknmKuHHq53BE",
+      "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyDdzK1m-uCUib1L4CoNCJk4F7R1CH_lHrw",
       {
         method: "POST",
         body: JSON.stringify({
@@ -47,7 +47,7 @@ const SignIn = () => {
       emailRef.current.value = "";
       pswdRef.current.value = "";
 
-      // loginCtx.login(data.email, data.idToken);
+     
       dispatch(AuthActions.login({ email: data.email, idToken: data.idToken }));
 
       history.replace("/welcome");
