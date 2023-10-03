@@ -9,7 +9,7 @@
   color:rgb(234, 228, 228);
   min-height: 100vh;
   font-family: 'Times New Roman', Times, serif;
-  background-image:url('../src/compounds/Style/expences2.jpg') ;
+  background-image:url('../src/components/Style/expences2.jpg') ;
   background-repeat: no-repeat;
   background-size: 100% 100% ;
   /* border:3px #e21c1c; */

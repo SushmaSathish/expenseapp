@@ -5,11 +5,7 @@ export const getExpenseFetching = (email) => {
     const getExpenseFetching = async (email) => {
       try {
         const response = await fetch(
-          
-          // `https://console.firebase.google.com/project/database-c6daf/database/database-c6daf-default-rtdb/data/~2F/${email}.json`,
-          
-         `https://database-c6daf-default-rtdb.firebaseio.com/expenses/${email}.json`,
-
+          `https://redux-13685-default-rtdb.firebaseio.com/expenses/${email}.json`,
           {
             method: "GET",
             headers: {
@@ -54,8 +50,8 @@ export const addExpenseFetching = (expense, email) => {
       try {
         const response = await fetch(
           
-          // `https://console.firebase.google.com/project/database-c6daf/database/database-c6daf-default-rtdb/data/~2F/${email}.json`,
-          `https://database-c6daf-default-rtdb.firebaseio.com/expenses/${email}.json`,
+          
+          `https://redux-13685-default-rtdb.firebaseio.com/expenses/${email}.json`,
           {
             method: "POST",
             body: JSON.stringify({
@@ -84,7 +80,7 @@ export const editExpenseFetching = (expenseItem, email) => {
     const editExpenseFetching = async (expenseItem, email) => {
       try {
         const response = await fetch(
-          `https://database-c6daf-default-rtdb.firebaseio.com/expenses/${email}/${expenseItem.id}.json`,
+          `https://redux-13685-default-rtdb.firebaseio.com/expenses/${email}/${expenseItem.id}.json`,
           {
             method: "PUT",
             body: JSON.stringify({
@@ -113,8 +109,8 @@ export const deleteExpenseFetching = (id, email) => {
     const deleteExpenseFetching = async (id, email) => {
       try {
         const response = await fetch(
-          // `https://console.firebase.google.com/project/database-c6daf/database/database-c6daf-default-rtdb/data/~2F/${email}/${id}.json`,
-          `https://database-c6daf-default-rtdb.firebaseio.com/expenses/${email}/${id}.json`,
+         
+          `https://redux-13685-default-rtdb.firebaseio.com/expenses/${email}/${id}.json`,
           {
             method: "DELETE",
             headers: {

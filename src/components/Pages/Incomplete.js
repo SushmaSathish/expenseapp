@@ -1,4 +1,4 @@
-// import classes from "./IncompleteProfile.module.css";
+
 import React, { useEffect, useState } from "react";
 import { useRef } from "react";
 
@@ -21,7 +21,7 @@ const IncompleteProfile = () => {
     const fullName = fullNameRef.current.value;
     const photoUrl = photoRef.current.value;
     const response = await fetch(
-      "https://identitytoolkit.googleapis.com/v1/accounts:update?key=AIzaSyAe2c-LVG1tbj5NhaYcEXqknmKuHHq53BE",
+      "https://identitytoolkit.googleapis.com/v1/accounts:update?key=AIzaSyDdzK1m-uCUib1L4CoNCJk4F7R1CH_lHrw",
       {
         method: "POST",
         body: JSON.stringify({
@@ -50,7 +50,7 @@ const IncompleteProfile = () => {
   useEffect(() => {
     const fillInputsHandler = async () => {
       const response = await fetch(
-        "https://identitytoolkit.googleapis.com/v1/accounts:lookup?key=AIzaSyAe2c-LVG1tbj5NhaYcEXqknmKuHHq53BE",
+        "https://identitytoolkit.googleapis.com/v1/accounts:lookup?key=AIzaSyDdzK1m-uCUib1L4CoNCJk4F7R1CH_lHrw",
         {
           method: "POST",
           body: JSON.stringify({

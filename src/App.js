@@ -1,15 +1,15 @@
 import React from 'react';
-import SignUp from './compounds/UI/SignUp';
-import SignIn from './compounds/UI/SignIn';
-import Welcome from './compounds/UI/Welcome';
-import ForgotPassword from './compounds/Pages/ForgotPassword';
+import SignUp from './components/UI/SignUp';
+import SignIn from './components/UI/SignIn';
+import Welcome from './components/UI/Welcome';
+import ForgotPassword from './components/Pages/ForgotPassword';
 import  { Redirect,Route } from 'react-router-dom';
-import IncompleteProfile from './compounds/Pages/Incomplete';
-import Expenses from './compounds/Expence/Expenses';
-import Header from './compounds/Header/Header';
+import IncompleteProfile from './components/Pages/Incomplete';
+import Expenses from './components/Expense/Expenses';
+import Header from './components/Header/Header';
 import { useSelector } from 'react-redux';
 import classes from "./App.module.css";
-import Home from './compounds/Header/Home';
+import Home from './components/Header/Home';
 function App() {
   const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
   const theme = useSelector((state) => state.theme.theme);

@@ -9,7 +9,7 @@ const ForgotPassword = () => {
     event.preventDefault();
     const forgotEmailValue = forgotEmailRef.current.value;
     const response = await fetch(
-      "https://identitytoolkit.googleapis.com/v1/accounts:sendOobCode?key=AIzaSyAe2c-LVG1tbj5NhaYcEXqknmKuHHq53BE",
+      "https://identitytoolkit.googleapis.com/v1/accounts:sendOobCode?key=AIzaSyDdzK1m-uCUib1L4CoNCJk4F7R1CH_lHrw",
       {
         method: "POST",
         body: JSON.stringify({
